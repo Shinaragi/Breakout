@@ -36,6 +36,13 @@ public class Ball : MonoBehaviour
 
             // Set Velocity with dir * speed
             GetComponent<Rigidbody2D>().velocity = dir * speed;
+
+            if (speed <= 200)
+            {
+                speed += 25;
+            }
         }
     }
+
+
 }
